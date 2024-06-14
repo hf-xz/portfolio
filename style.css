@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  margin: 0;
+  background: url(assets/cool-background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 750px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Helvetica;
+}
+
+p {
+  text-indent: 1em;
+}
+
+.align-start {
+  align-self: start;
+}
+.align-center {
+  align-self: center;
+}
+
+.imgs {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+img,
+video {
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.zoomed {
+  transform: scale(2.5);
+  z-index: 10;
+}
+
+.only-in-print {
+  display: none;
+}
+@media print {
+  video,
+  .hide-in-print {
+    display: none;
+  }
+  .only-in-print {
+    display: block;
+  }
+  img {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header align-center">
+        <h1>Han Taixuan's Portfolio</h1>
+      </div>
+
+      <div class="hide-in-print">
+        <p>I wrote this website myself, so it's also part of my portfolio :)</p>
+        <p>You can click on image to zoom in.</p>
+      </div>
+
+      <div class="only-in-print">
+        <a href="https://hf-xz.github.io/portfolio/">
+          View my portfolio on website
+        </a>
+        &nbsp;&nbsp;CV is at the end of the pdf.
+      </div>
+
+      <!-- 雀跃之火 -->
+      <div class="section">
+        <h2>A. Installation - Caper Fire "雀跃之火"</h2>
+
+        <h3>1. Introduction</h3>
+        <p>
+          In order to increase the immersion of people listening to music, so
+          that music for people to bring more pleasant experience, we decided to
+          carry out the "Caper Fire" music flame rhythm system project plan. The
+          sound acquisition device of the system can collect the ambient sound
+          signal or the input sound media signal, and the system controls the
+          height of the flame generated in the flame device according to the
+          volume and spectrum of the collected sound signal, which increases the
+          user's immersion in music. At the same time, led light arrays outside
+          the flame unit will display a spectrum map of the visual sound signal
+          in real time to optimize the user experience.
+        </p>
+
+        <h3>2. Images & Video</h3>
+        <div class="imgs">
+          <img src="assets/CaperFire/c4d.png" />
+          <img src="assets/CaperFire/top.png" />
+          <img src="assets/CaperFire/fire.png" />
+          <img src="assets/CaperFire/overview.png" />
+          <img src="assets/CaperFire/led.png" />
+          <video controls>
+            <source src="assets/CaperFire/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+            <a href="assets/CaperFire/video.mp4">Download the video</a>
+          </video>
+          <div class="only-in-print">
+            Please see video on
+            <a href="https://hf-xz.github.io/portfolio/">website</a>.
+          </div>
+        </div>
+
+        <h3>3. Parts of Work</h3>
+        <p>
+          I'm responsible for coding in this work. I wrote the code to complete
+          the following tasks:
+        </p>
+        <ul>
+          <li>
+            <b>Drive hardware&nbsp;</b>
+            By defining pins, reading and outputting voltage changes, I
+            successfully achieved sound information reading from the microphone,
+            controlling servo rotation, and controlling LED light changes
+          </li>
+          <li>
+            <b>Perform filtering on microphone data collection&nbsp;</b>
+            Due to microphone quality issues, there is a lot of noise in the
+            collected sound data. I used a filtering algorithm to filter out the
+            noise and obtained higher quality sound information
+          </li>
+          <li>
+            <b>Perform FFT calculations on sound data&nbsp;</b>
+            By performing FFT (Fast Fourier Transform) on sound data, I obtained
+            frequency domain data, which I can then discretize and display on
+            LED matrix light board
+          </li>
+        </ul>
+
+        <h3>4. Processes & Design Thinking</h3>
+        <ol>
+          <li>
+            I took inspiration from the Fire Dragon Scroll and wanted to create
+            a device that can control flames
+          </li>
+          <li>
+            I discussed the feasibility with the group members and decided to
+            combine this flame control device with sound and melody to form a
+            flame atmosphere lighting fixture that provides feedback based on
+            environmental sound. The goal is to install it in places such as
+            restaurants
+          </li>
+          <li>
+            We collected people's attitudes through distributing survey
+            questionnaires and found that everyone agrees with this
+          </li>
+          <li>
+            Under the guidance of our teacher, we created this device through
+            methods such as researching materials and conducting experiments
+          </li>
+        </ol>
+      </div>
+
+      <!-- 流量平台 -->
+      <div class="section">
+        <h2>B. Website - IoT Traffic Manage Platform "物联网连接管理平台"</h2>
+
+        <h3>1. Introduction</h3>
+        <p>
+          This is a project I wrote in the company, mainly responsible for
+          managing and distributing the network traffic of IoT (Internet of
+          Things) devices. It is a management platform used internally by the
+          company and customers.
+        </p>
+
+        <h3>2. Images</h3>
+        <div class="imgs">
+          <img src="assets/IoTPlatform/login.jpg" />
+          <img src="assets/IoTPlatform/kanban.jpg" />
+          <img src="assets/IoTPlatform/import.jpg" />
+          <img src="assets/IoTPlatform/dialog.jpg" />
+          <img src="assets/IoTPlatform/error.jpg" />
+          <img src="assets/IoTPlatform/darkmode.jpg" />
+        </div>
+
+        <h3>3. Parts of Work</h3>
+        <p>I'm responsible for all forntend coding in this work.</p>
+        <ul>
+          <li>
+            <b>UI & UX:</b>
+            I am responsible for controlling the style and details of the page
+            to ensure the customer's interaction experience, for example
+            <ul>
+              <li>
+                Design the color system for the entire platform and provide dark
+                modes
+              </li>
+              <li>
+                Add appropriate icons in appropriate locations to prompt users
+              </li>
+              <li>
+                Provide feedback to users through toast on successful or failed
+                execution
+              </li>
+              <li>
+                Automatically refresh table data after executing commands to
+                avoid user confusion
+              </li>
+            </ul>
+          </li>
+          <li>
+            <b>Project Building:</b>
+            I started building the entire frontend project based on Vue and
+            achieved
+            <ul>
+              <li>'Pinia' for state management</li>
+              <li>'Vue Router' for routing management</li>
+              <li>'Vuetify' for component library</li>
+              <li>'Axios' for network request (encapsulated as API class)</li>
+              <li>'Eslint' for code quality inspection</li>
+              <li>'Prettier' for code formatting</li>
+              <li>...</li>
+            </ul>
+          </li>
+          <li>
+            <b>Code implementation:</b>
+            I am responsible for writing all frontend code, and during this
+            process, I have fully honed my frontend coding skills, familiarized
+            myself with many technologies including HTML, CSS, JS, Vue, and more
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
