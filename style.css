@@ -58,6 +58,21 @@ img {
   z-index: 10;
 }
 
+.tips {
+  font-size: 0.9em;
+  position: relative;
+  margin-left: 10px;
+}
+.tips::before {
+  position: absolute;
+  left: -10px;
+  display: block;
+  width: 3px;
+  height: 100%;
+  background-color: black;
+  content: "";
+}
+
 .only-in-print {
   display: none;
 }
