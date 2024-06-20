@@ -5,6 +5,8 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: Helvetica;
+  line-height: 1.35;
 }
 .container {
   width: 750px;
